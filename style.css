@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0.7)), url(./img/weather-cool.jpg) no-repeat center/cover;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0.7)), url(./img/weather-snow.jpg) no-repeat center/cover;
     font-family: sans-serif;
     height: 100vh;
 
@@ -16,6 +16,7 @@ body{
 
 #weather{
     width: 350px;
+
     border-radius: 10px;
     padding: 30px 20px;
     background: url(./img/weather-snow.jpg);
@@ -47,7 +48,12 @@ body{
     color: white;
     margin-top: 40px;
 
+    transition: 0.4s;
+}
 
+.hide{
+    visibility: hidden;
+    opacity: 0;
 }
 
 .location{
@@ -75,6 +81,7 @@ body{
 }
 
 .status{
+    max-height: 50px;
     margin: 30px;
 
     font-size: 40px;
@@ -83,6 +90,8 @@ body{
 }
 
 .details{
+    padding-top: 30px;
+
     display: flex;
     justify-content: space-between;
 }
