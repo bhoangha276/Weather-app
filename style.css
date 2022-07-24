@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0.7)), url(./img/weather-snow.jpg) no-repeat center/cover;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0.7)), url(./img/weather-night.jpg) no-repeat center/cover;
     font-family: sans-serif;
     height: 100vh;
 
@@ -19,7 +19,28 @@ body{
 
     border-radius: 10px;
     padding: 30px 20px;
-    background: url(./img/weather-snow.jpg);
+    background: url(./img/weather-night.jpg) no-repeat center/cover;
+}
+
+.hot{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0.7)), url(./img/weather-hot.jpg) no-repeat center/cover;
+}
+.hot #weather {
+    background: url(./img/weather-hot.jpg) no-repeat center/cover;
+}
+
+.cold{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0.7)), url(./img/weather-cold.jpg) no-repeat center/cover;
+}
+.cold #weather {
+    background: url(./img/weather-cold.jpg) no-repeat center/cover;
+}
+
+.warm{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0.7)), url(./img/weather-warm.jpg) no-repeat center/cover;
+}
+.warm #weather {
+    background: url(./img/weather-warm.jpg) no-repeat center/cover;
 }
 
 .search{
@@ -87,6 +108,10 @@ body{
     font-size: 40px;
     font-weight: bold;
     text-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.5);
+}
+
+.status:first-letter{
+    text-transform: capitalize;
 }
 
 .details{
